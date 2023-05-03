@@ -33,17 +33,16 @@
 <body>
     <header>
         <a class="logo" href="#home"><img class="logo" src="assets/logo.svg" alt="logo brand"></a>
-        <button class="menu" aria-controls="primary-navigation" aria-expanded="false">
-            <svg fill="var(--button-color)" class="hamburger" viewBox="0 0 100 100" width="40">
-                <rect class="top-line line" width="80" height="10" x="10" y="25" rx="5"></rect>
-                <rect class="mid-line line" width="80" height="10" x="10" y="45" rx="5"></rect>
-                <rect class="bottom-line line" width="80" height="10" x="10" y="65" rx="5"></rect>
-            </svg>
-        </button>
+        <div class="menu">
+        <button class="hamburger"><img src="assets/hamburger.png" alt="" /></button>
+        <button class="hamburger hidden"><img src="assets/close.png" alt="" /></button>
+        </div>
+            
+        
         <nav class="navigation bw">
-            <ul class="nav-items ">
+            <ul class="nav-items">
                 <li class="list-element"><a href="#">Home</a></li>
-                <li class="list-element"><a href="#">About</a></li>
+                <li class="list-element"><a href="#about">About</a></li>
                 <li class="list-element"><a href="#">Instructors</a></li>
                 <li class="list-element"><a href="#">Insurance</a></li>
                 <li class="list-element"><a href="#">SignIn|Register</a></li>
@@ -55,19 +54,25 @@
     <main>
 
         <section class="hero bw">
+            <div class="hero-container">
 
+            
             <div class="hero-heading-container">
                 <h1 class="hero-heading ">Get My Instructor.com</h1>
             </div>
             <div class="hero-content-container">
                 <p class="hero-content">If you wish to learn skiing or snowboarding smoothly and effectively, then Get
+                    my Instructor is the perfect place for you! Feel free to choose and become the star of the ski slopes!
+                </p>
+                <!-- <p class="hero-content">If you wish to learn skiing or snowboarding smoothly and effectively, then Get
                     my Instructor is the perfect place for you! Our website showcases skilled instructors who advertise
                     themselves, and you can pick the one that suits your requirements the best. Our instructors are
                     accessible at numerous locations and times, ensuring that you will find one who can work according
                     to your needs. Our instructors provide tailored instruction to assist you in mastering the
                     intricacies of skiing or snowboarding, making it possible for you to conquer even the most
                     challenging slopes. Feel free to choose and become the star of the ski slopes!
-                </p>
+                </p> -->
+            </div>
             </div>
         </section>
         <section class="banner-1 bw">
@@ -101,12 +106,17 @@
             </div>
         </section>
         <section class="banner-2 bw">
+            <div class="banner-2-wrapper">
             <div class="banner-2-img">
                 <img src="assets/banner-2.jpg" alt="banner-2">
             </div>
+
             <div class="banner-2-content">
                 <span class="banner-2-title"> Camps by Our Instructors</span>
-                <p> If you're considering taking part in a ski or snowboard camp, you're in
+                
+            </div>
+            </div>
+            <p> If you're considering taking part in a ski or snowboard camp, you're in
                     the right place. Our site brings together instructors to offer the best camps at the best prices and
                     locations.
 
@@ -126,7 +136,7 @@
                     prices and locations with us. Just sign up and enjoy the experience in the best company. Don't
                     hesitate, join us today and enjoy the skiing and snowboarding experience in a friendly and
                     professional community!</p>
-            </div>
+            
 
         </section>
     </main>
